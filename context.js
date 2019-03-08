@@ -20,13 +20,26 @@
   
 
 //Code Here
+
 let user = {
-  username: 'markmciver',
-  email: 'someemail@email.com',
-  getUsername: function() {
-    return this.username
+  username: "Kramer",
+  email: "kramer@seinfeld.com",
+  getUsername: function(){
+    return this.username;
   }
 }
+
+
+
+
+
+// let user = {
+//   username: 'markmciver',
+//   email: 'someemail@email.com',
+//   getUsername: function() {
+//     return this.username
+//   }
+// }
 
 
 ////////// PROBLEM 2 //////////
@@ -35,10 +48,15 @@ let user = {
  Below we have the class Animal.  The eat method is using the "this" keyword.  Use the "new" keyword to assign context to "this", and save the instance to a variable named animal1.  You can pass anything you want in for name, species and food.
 */
 
+
+
+
+
 class Animal {
   constructor(name, species, food) {
-    this.name = name
-    this.species = species
+    this.name = name;
+    this.species = species;
+    this.food = food
   }
 
   eat() {
@@ -48,7 +66,9 @@ class Animal {
 
 //Code Here
 
-let animal1 = new Animal('Luna', 'Dog', 'treats')
+let animal1 = new Animal("humphrey", "german husky", "costco's chicken bake")
+
+// let animal1 = new Animal('Luna', 'Dog', 'treats')
 
 
 ////////// PROBLEM 3 //////////
@@ -69,6 +89,7 @@ let who = {
 
 //Code Here
 
+// let scubaSteveSaysHi = sayHi.bind(who);
 let whoSaysHi = sayHi.bind(who)
 
 ////////// PROBLEM 4 //////////
@@ -83,7 +104,7 @@ function whatIsThis() {
   return this
 }
 // uncomment the line below and tell us what the context of "this" is for the above function
-let context1 = window
+let context1 = window;
 
 let product = {
   name: 'snake plant',
